@@ -1,6 +1,6 @@
 {
-  "name": "pdf-exporter-notebooklm",
-  "displayName": "NotebookLM PDF Exporter",
+  "name": "code-context-packer",
+  "displayName": "Code Context Packer for NotebookLM",
   "description": "Export a file's folder and project tree as PDFs for NotebookLM context",
   "version": "0.1.0",
   "publisher": "hakamshakir",
