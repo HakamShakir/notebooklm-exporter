@@ -1,0 +1,54 @@
+{
+  "name": "notebooklm-pdf-exporter",
+  "displayName": "NotebookLM PDF Exporter",
+  "description": "Export a file's folder and project tree as PDFs for NotebookLM context",
+  "version": "0.1.0",
+  "publisher": "hakamshakir",
+  "author": {
+    "name": "Hakam Shakir",
+    "email": "hakamshakirr@gmail.com",
+    "url": "https://github.com/hakamshakir"
+  },
+  "keywords": [
+    "notebooklm",
+    "pdf",
+    "export",
+    "vscode",
+    "productivity"
+  ],
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "notebooklm-exporter.export",
+        "title": "Export to NotebookLM PDFs"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "notebooklm-exporter.export",
+          "when": "resourceScheme == file",
+          "group": "7_modification"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "install-deps": "npm install",
+    "package": "npx @vscode/vsce package"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0"
+  }
+}
