@@ -1,5 +1,5 @@
 {
-  "name": "notebooklm-pdf-exporter",
+  "name": "pdf-exporter-notebooklm",
   "displayName": "NotebookLM PDF Exporter",
   "description": "Export a file's folder and project tree as PDFs for NotebookLM context",
   "version": "0.1.0",
